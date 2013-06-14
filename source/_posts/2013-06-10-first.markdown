@@ -1,0 +1,44 @@
+---
+layout: post
+title: "first"
+date: 2013-06-10 16:48
+comments: true
+categories: 
+---
+
+# This is First post!
+Octopress is cool blog system.
+
+## How To
+
+	$ git clone git://github.com/imathis/octopress.git octopress
+	$ cd octopress
+	$ (sudo) gem install bundler
+	$ bundle install
+	$ rake install
+	$ rake new_post['first']
+	$ rake generate
+	$ rake preview
+
+You can see this page by `localhost:4000`.
+
+How to create new page is following.
+
+	$ rake new_page['page']
+	$ rake generate
+	$ rake preview
+
+You should change url `localhost:4000` to `localhost:4000/page`.
+
+And try changing theme.
+
+	$ git clone THEME_URL .theme/THEME_NAME
+	$ rake install['THEME_NAME']
+	$ rake generate
+	$ rake preview
+
+Some urls is [here](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes).
+
+
+
+Octopress makes fun you will be blogging about everything.

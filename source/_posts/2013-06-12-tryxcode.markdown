@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Xcodeでの実行"
+date: 2013-06-12 16:51
+comments: true
+categories: 
+---
+
+本記事ではGCubeをXcodeで利用する方法を紹介しています。
+
+## GCubeのダウンロード
+
+GCube本体を[GitHub][github]よりダウンロードします。
+
+{% img /images/gcube/TryXcode/web-github-zip.png 'zip' 'zip' %}
+
+## Xcodeのダウンロードと準備
+
+Xcodeは[公式サイト][xcode]またはApp Storeからダウンロードしてきてください。
+起動直後は次のような新しいプロジェクトを作成するための画面が出ます。
+
+{% img /images/gcube/TryXcode/xcode-welcome.png 'welcome' 'welcome' %}
+
+今のところこれは必要ないので消します。
+
+その状態でメニューから`Xcode` > `Preferences`と選択して設定画面を開きます。
+タブの中から`Downloads`を選択して`Command Line Tools`をinstallします。
+
+{% img /images/gcube/TryXcode/xcode-download.png 'download' 'download' %}
+
+## GCubeプロジェクト導入の仕方
+
+ダウンロードして解凍したGCubeのプロジェクトフォルダの中から`GCube.xcodeproj`をダブルクリックしてXcodeを起動します。
+
+`Gcube.xcodeproj`は
+	(GCubeプロジェクトのパス)/platforms/iOS/GCube/GCube.xcodeproj
+にあります。
+
+{% img /images/gcube/TryXcode/finder-gcube.png 'gcube' 'gcube' %}
+
+## 実行
+
+Xcodeが起動した後はRunボタンを押して実行するだけです。初回実行の際はビルドのためそれなりに時間がかかります。
+
+{% img /images/gcube/TryXcode/xcode-processing.png 'processing' 'processing' %}
+
+実行後、Organizerでスクリーンショットを取ってみた画像です。
+
+{% img /images/gcube/TryXcode/xcode-hello.png 'hello' 'hello' %}
+
+
+# 関連リンク
+
+[github]:https://github.com/gclue/GCube
+[xcode]:https://developer.apple.com/xcode/
